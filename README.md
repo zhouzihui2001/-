@@ -17,7 +17,7 @@
 ​2. **双重损失优化机制**：针对模态内相似性过高的问题，提出加权对比损失（加权策略参考了样本重要性动态调整方法）与场景自适应细粒度感知损失，通过约束特征空间分布提升模型判别力。
 ​3. **价值引导学习框架**：在训练阶段动态聚焦关键信息，通过自适应的注意力机制（类似场景自适应门单元设计）优化不同训练阶段的学习目标优先级，显著提升模型收敛效率。
 本工作在RSICD与RSITMD数据集上验证了模型的有效性，结果表明本方法在细粒度特征学习与跨模态对齐任务中均达到领先水平。
-![# fine-grained_framework](assets/Framework.pdf)
+![# fine-grained_framework](assets/fine-grained_framework.png)
 * 引用
 ```bibtex
 @article{zhou2024fine,

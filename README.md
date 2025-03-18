@@ -4,8 +4,8 @@
 ## 目录
 
 - [算法](#算法)
-  - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval)
-  - [DMA-YOLO: multi-scale object detection  method with attention mechanism for aerial images](#DMA-YOLO: multi-scale object detection  method with attention mechanism for aerial images)
+  - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
+  - [DMA-YOLO: multi-scale object detection method with attention mechanism for aerial images](#dma-yolo-multi-scale-object-detection-method-with-attention-mechanism-for-aerial-images)
 - [数据集](#数据集)
   - [RSITMD](#RSITMD)
   - [RSICD](#RSICD)
@@ -34,16 +34,19 @@
   publisher={IEEE}
 }
 ```
-* 代码请见[FISVL](FISVL/)
+* 代码请见[FISVL](FISVL.zip)
 
 ### DMA-YOLO: multi-scale object detection  method with attention mechanism for aerial images
 本工作对通用目标检测方法YOLOv5进行了改进，引入了一种多尺度检测方法分离-合并注意力YOLO（Detach-Merge Attention YOLO, DMA-YOLO）。具体来说，本工作提出了一个分离-合并卷积（Detach-Merge Convolution, DMC）模块，并将其嵌入到骨干网络中，以最大限度地保留特征。此外，本工作将瓶颈注意力模块（Bottleneck Attention Module, BAM）嵌入到检测头中，在不显著增加计算复杂度的情况下抑制复杂背景信息的干扰。为了更有效地表示和处理多尺度特征，本工作将一个额外的检测头和增强的颈部网络集成到双向特征金字塔网络（Bi-directional Feature Pyramid Network, BiFPN）结构中。最后，本工作采用SCYLLA-IoU（SIoU）作为损失函数以加快模型的收敛速度、提高精度。本工作在VisDrone2019和UAVDT数据集上验证了模型的效果。
 ![# DMA-YOLO框架图](assets/DMA-YOLO_framework.png)
 * 模型效果
-  
-![# DMA-YOLO在VisDrone2019-Val数据集上的效果](assets/DMA-YOLO_result1.png)
 
-![# DMA-YOLO在UAVDT test数据集上的效果](assets/DMA-YOLO_result2.png)
+<div align="center">
+  <img src="assets/DMA-YOLO_result1.png" alt="" width="50%">
+</div>
+<div align="center">
+  <img src="assets/DMA-YOLO_result2.png" alt="" width="50%">
+</div>
 ![# 可视化效果](assets/DMA-YOLO_result3.png)
 * 引用
 ```bibtex
@@ -58,7 +61,7 @@
   publisher={Springer}
 }
 ```
-* 代码请见[DMA-YOLO](DMA-YOLO/)
+* 代码请见[DMA-YOLO](DMA-YOLO.zip)
 
 ## 数据集
 ### RSITMD

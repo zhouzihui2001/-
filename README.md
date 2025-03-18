@@ -20,6 +20,7 @@
 本工作在RSICD与RSITMD数据集上验证了模型的有效性，结果表明本方法在细粒度特征学习与跨模态对齐任务中均达到领先水平。
 ![# FISVL框架图](assets/fine-grained_framework.png)
 * 模型效果
+  
 ![# FISVL在RSITMD和RSICD数据集上的效果](assets/FISVL_result1.png)
 ![# 可视化效果](assets/FISVL_result2.png)
 * 引用
@@ -38,6 +39,7 @@
 本工作对通用目标检测方法YOLOv5进行了改进，引入了一种多尺度检测方法分离-合并注意力YOLO（Detach-Merge Attention YOLO, DMA-YOLO）。具体来说，本工作提出了一个分离-合并卷积（Detach-Merge Convolution, DMC）模块，并将其嵌入到骨干网络中，以最大限度地保留特征。此外，本工作将瓶颈注意力模块（Bottleneck Attention Module, BAM）嵌入到检测头中，在不显著增加计算复杂度的情况下抑制复杂背景信息的干扰。为了更有效地表示和处理多尺度特征，本工作将一个额外的检测头和增强的颈部网络集成到双向特征金字塔网络（Bi-directional Feature Pyramid Network, BiFPN）结构中。最后，本工作采用SCYLLA-IoU（SIoU）作为损失函数以加快模型的收敛速度、提高精度。本工作在VisDrone2019和UAVDT数据集上验证了模型的效果。
 ![# DMA-YOLO框架图](assets/DMA-YOLO_framework.png)
 * 模型效果
+  
 ![# DMA-YOLO在VisDrone2019-Val数据集上的效果](assets/DMA-YOLO_result1.png)
 ![# DMA-YOLO在UAVDT test数据集上的效果](assets/DMA-YOLO_result2.png)
 ![# 可视化效果](assets/DMA-YOLO_result3.png)

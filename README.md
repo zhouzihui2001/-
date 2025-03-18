@@ -5,6 +5,7 @@
 
 - [算法](#算法)
   - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval)
+  - [DMA-YOLO: multi-scale object detection  method with attention mechanism for aerial images](#DMA-YOLO: multi-scale object detection  method with attention mechanism for aerial images)
 - [数据集](#数据集)
   - [RSITMD](#RSITMD)
   - [RSICD](#RSICD)
@@ -41,6 +42,7 @@
 * 模型效果
   
 ![# DMA-YOLO在VisDrone2019-Val数据集上的效果](assets/DMA-YOLO_result1.png)
+
 ![# DMA-YOLO在UAVDT test数据集上的效果](assets/DMA-YOLO_result2.png)
 ![# 可视化效果](assets/DMA-YOLO_result3.png)
 * 引用

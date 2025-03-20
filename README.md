@@ -6,6 +6,8 @@
 - [算法](#算法)
   - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
   - [DMA-YOLO: multi-scale object detection method with attention mechanism for aerial images](#dma-yolo-multi-scale-object-detection-method-with-attention-mechanism-for-aerial-images)
+  - [Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching](#multi-level-network-based-on-transformer-encoder-for-fine-grained-image–text-matching)
+  - [Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval](#manifold-and-patch-based-unsupervised-deep-metric-learning-for-fine-grained-image-retrieval)
 - [数据集](#数据集)
   - [RSITMD](#RSITMD)
   - [RSICD](#RSICD)
@@ -64,6 +66,27 @@
 }
 ```
 * 代码请见[DMA-YOLO](DMA-YOLO.zip)
+
+### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching
+
+* 模型效果
+
+* 引用
+```bibtex
+@article{yang2023multi,
+  title={Multi-level network based on transformer encoder for fine-grained image--text matching},
+  author={Yang, Lei and Feng, Yong and Zhou, Mingliang and Xiong, Xiancai and Wang, Yongheng and Qiang, Baohua},
+  journal={Multimedia Systems},
+  volume={29},
+  number={4},
+  pages={1981--1994},
+  year={2023},
+  publisher={Springer}
+}
+```
+* 代码请见[JGDN](https://github.com/CQULab/JGDN)
+
+### Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval
 
 ## 数据集
 ### RSITMD

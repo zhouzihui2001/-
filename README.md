@@ -68,6 +68,7 @@
 * 代码请见[DMA-YOLO](DMA-YOLO.zip)
 
 ### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching
+本工作提出了一种基于Transformer Encoder的多级网络，用于细粒度的图像-文本匹配。首先，采用Transformer编码器提取图像与文本的模态内关联关系，并通过高效聚合方法实现对齐，既提升了对齐效率，又充分利用了模态内信息；其次，捕获图像和文本中具有判别性的数字信息以增强表征区分度；最后，将图像与文本的全局信息作为补充特征进一步强化表征。实验结果表明，相较于现有最优算法，本方法在检索任务和运行时耗方面均取得显著提升。
 
 * 模型效果
 
@@ -84,9 +85,30 @@
   publisher={Springer}
 }
 ```
-* 代码请见[JGDN](https://github.com/CQULab/JGDN)
+* 代码请见[MNTE](https://github.com/CQULab/MNTE)
 
 ### Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval
+本工作提出了一个面向细粒度图像检索的流形与图像块联合驱动的无监督深度度量学习方法（Manifold and Patch-based Unsupervised Deep Metric Learning, MPUDML）​。首先，本工作采用基于流形相似度的平衡采样策略构建更均衡的小批量样本。其次，利用流形相似度与未标注图像间余弦相似度获取软监督信息实现样本区分，有效降低噪声样本影响。最后，通过图像块级聚类与定位任务挖掘图像内部块间丰富特征信息，从而指导获取更全面的特征嵌入表征，提升检索性能。在细粒度图像检索与聚类任务中，MPUDML与多种前沿无监督深度度量学习方法进行对比验证。实验结果表明，本方法在召回率（R@K）与归一化互信息（NMI）指标上均超越其他先进方法。
+
+* 模型效果
+
+* 引用
+```bibtex
+@article{yuan2025manifold,
+  title={Manifold and patch-based unsupervised deep metric learning for fine-grained image retrieval},
+  author={Yuan, Shi-hao and Feng, Yong and Qiu, A and Duan, Guo-fan and Zhou, Ming-liang and Qiang, Bao-hua and Wang, Yong-heng},
+  journal={Applied Intelligence},
+  volume={55},
+  number={2},
+  pages={1--18},
+  year={2025},
+  publisher={Springer}
+}
+```
+* 代码请见[MPUDML](MPUDML.zip)
+  
+### 其他
+* [JGDN](https://github.com/CQULab/JGDN)
 
 ## 数据集
 ### RSITMD

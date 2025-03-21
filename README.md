@@ -74,9 +74,11 @@
 
 ### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image-Text Matching
 本工作提出了一种基于**Transformer Encoder**的多级网络，用于细粒度的图像-文本匹配。首先，**采用Transformer编码器提取图像与文本的模态内关联关系**，并通过高效聚合方法实现对齐，既提升了对齐效率，又充分利用了模态内信息；其次，**捕获图像和文本中具有判别性的数字信息**以增强表征区分度；最后，将**图像与文本的全局信息**作为补充特征，进一步强化表征。实验结果表明，相较于现有最优算法，本方法在检索任务和运行时耗方面均取得显著提升。
-
+![# MNTE框架图](assets/MNTE_framework.png)
 * 模型效果
-
+![# MNTE_result1](assets/MNTE_result1.png)
+![# MNTE_result2](assets/MNTE_result2.png)
+![# MNTE_result3](assets/MNTE_result3.png)
 * 引用
 ```bibtex
 @article{yang2023multi,
@@ -94,9 +96,10 @@
 
 ### Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval
 本工作提出了一个**面向细粒度图像检索的流形与图像块联合驱动的无监督深度度量学习方法（Manifold and Patch-based Unsupervised Deep Metric Learning, MPUDML）**。首先，采用**基于流形相似度的平衡采样策略**构建更均衡的小批量样本。其次，利用**流形相似度与未标注图像间余弦相似度**获取软监督信息实现样本区分，有效降低噪声样本影响。最后，通过**图像块级聚类与定位任务**挖掘图像内部块间丰富特征信息，从而指导获取更全面的特征嵌入表征，提升检索性能。在细粒度图像检索与聚类任务中，MPUDML与多种前沿无监督深度度量学习方法进行对比验证。实验结果表明，本方法在召回率（R@K）与归一化互信息（NMI）指标上均超越其他先进方法。
-
+![# MPUDML框架图](assets/MPUDML_framework.png)
 * 模型效果
-
+![# MPUDML_result1](assets/MPUDML_result1.png)
+![# MPUDML_result2](assets/MPUDML_result2.png)
 * 引用
 ```bibtex
 @article{yuan2025manifold,

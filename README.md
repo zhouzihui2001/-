@@ -6,7 +6,7 @@
 - [算法](#算法)
   - [Fine-Grained Information Supplementation and Value-Guided Learning for Remote Sensing Image-Text Retrieval](#fine-grained-information-supplementation-and-value-guided-learning-for-remote-sensing-image-text-retrieval)
   - [DMA-YOLO: multi-scale object detection method with attention mechanism for aerial images](#dma-yolo-multi-scale-object-detection-method-with-attention-mechanism-for-aerial-images)
-  - [Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching](#multi-level-network-based-on-transformer-encoder-for-fine-grained-image–text-matching)
+  - [Multi-Level Network Based on Transformer Encoder for Fine-Grained Image-Text Matching](#multi-level-network-based-on-transformer-encoder-for-fine-grained-image-text-matching)
   - [Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval](#manifold-and-patch-based-unsupervised-deep-metric-learning-for-fine-grained-image-retrieval)
 - [数据集](#数据集)
   - [RSITMD](#RSITMD)
@@ -72,7 +72,7 @@
 ```
 * 代码请见[DMA-YOLO](DMA-YOLO.zip)
 
-### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching
+### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image-Text Matching
 本工作提出了一种基于**Transformer Encoder**的多级网络，用于细粒度的图像-文本匹配。首先，**采用Transformer编码器提取图像与文本的模态内关联关系**，并通过高效聚合方法实现对齐，既提升了对齐效率，又充分利用了模态内信息；其次，**捕获图像和文本中具有判别性的数字信息**以增强表征区分度；最后，将**图像与文本的全局信息**作为补充特征，进一步强化表征。实验结果表明，相较于现有最优算法，本方法在检索任务和运行时耗方面均取得显著提升。
 
 * 模型效果

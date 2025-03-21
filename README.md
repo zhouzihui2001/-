@@ -39,7 +39,12 @@
 * 代码请见[FISVL-pytorch](FISVL-pytorch.zip)
 
 ### DMA-YOLO multi-scale object detection method with attention mechanism for aerial images
-本工作对通用目标检测方法YOLOv5进行了改进，引入了一种**多尺度检测方法分离-合并注意力YOLO（Detach-Merge Attention YOLO, DMA-YOLO）**。具体来说，本工作提出了一个**分离-合并卷积（Detach-Merge Convolution, DMC）模块**，并将其嵌入到骨干网络中，以最大限度地保留特征。此外，本工作将**瓶颈注意力模块（Bottleneck Attention Module, BAM）** 嵌入到检测头中，在不显著增加计算复杂度的情况下抑制复杂背景信息的干扰。为了更有效地表示和处理多尺度特征，本工作将一个额外的检测头和增强的颈部网络集成到**双向特征金字塔网络（Bi-directional Feature Pyramid Network, BiFPN）** 结构中。最后，本工作采用SCYLLA-IoU（SIoU）作为损失函数以加快模型的收敛速度、提高精度。本工作在**VisDrone2019和UAVDT数据集**上验证了模型的效果。
+本工作对通用目标检测方法YOLOv5进行了改进，引入了一种**多尺度检测方法分离-合并注意力YOLO（Detach-Merge Attention YOLO, DMA-YOLO）**。本工作包含以下设计：
+1. **分离-合并卷积（Detach-Merge Convolution, DMC）模块**，在骨干网络中使用，以最大限度地保留特征。
+2. 将**瓶颈注意力模块（Bottleneck Attention Module, BAM）** 嵌入到检测头中，在不显著增加计算复杂度的情况下抑制复杂背景信息的干扰。
+4. 为了更有效地表示和处理多尺度特征，将一个额外的检测头和增强的颈部网络集成到**双向特征金字塔网络（Bi-directional Feature Pyramid Network, BiFPN）** 结构中。
+5. 采用**SCYLLA-IoU（SIoU）** 作为损失函数以加快模型的收敛速度、提高精度。
+本工作在**VisDrone2019和UAVDT数据集**上验证了模型的效果。
 ![# DMA-YOLO框架图](assets/DMA-YOLO_framework.png)
 * 模型效果
 
@@ -68,7 +73,7 @@
 * 代码请见[DMA-YOLO](DMA-YOLO.zip)
 
 ### Multi-Level Network Based on Transformer Encoder for Fine-Grained Image–Text Matching
-本工作提出了一种基于Transformer Encoder的多级网络，用于细粒度的图像-文本匹配。首先，采用Transformer编码器提取图像与文本的模态内关联关系，并通过高效聚合方法实现对齐，既提升了对齐效率，又充分利用了模态内信息；其次，捕获图像和文本中具有判别性的数字信息以增强表征区分度；最后，将图像与文本的全局信息作为补充特征进一步强化表征。实验结果表明，相较于现有最优算法，本方法在检索任务和运行时耗方面均取得显著提升。
+本工作提出了一种基于**Transformer Encoder**的多级网络，用于细粒度的图像-文本匹配。首先，**采用Transformer编码器提取图像与文本的模态内关联关系**，并通过高效聚合方法实现对齐，既提升了对齐效率，又充分利用了模态内信息；其次，**捕获图像和文本中具有判别性的数字信息**以增强表征区分度；最后，将**图像与文本的全局信息**作为补充特征，进一步强化表征。实验结果表明，相较于现有最优算法，本方法在检索任务和运行时耗方面均取得显著提升。
 
 * 模型效果
 
@@ -88,7 +93,7 @@
 * 代码请见[MNTE](https://github.com/CQULab/MNTE)
 
 ### Manifold and Patch-Based Unsupervised Deep Metric Learning for Fine-Grained Image Retrieval
-本工作提出了一个面向细粒度图像检索的流形与图像块联合驱动的无监督深度度量学习方法（Manifold and Patch-based Unsupervised Deep Metric Learning, MPUDML）​。首先，本工作采用基于流形相似度的平衡采样策略构建更均衡的小批量样本。其次，利用流形相似度与未标注图像间余弦相似度获取软监督信息实现样本区分，有效降低噪声样本影响。最后，通过图像块级聚类与定位任务挖掘图像内部块间丰富特征信息，从而指导获取更全面的特征嵌入表征，提升检索性能。在细粒度图像检索与聚类任务中，MPUDML与多种前沿无监督深度度量学习方法进行对比验证。实验结果表明，本方法在召回率（R@K）与归一化互信息（NMI）指标上均超越其他先进方法。
+本工作提出了一个**面向细粒度图像检索的流形与图像块联合驱动的无监督深度度量学习方法（Manifold and Patch-based Unsupervised Deep Metric Learning, MPUDML）**。首先，采用**基于流形相似度的平衡采样策略**构建更均衡的小批量样本。其次，利用**流形相似度与未标注图像间余弦相似度**获取软监督信息实现样本区分，有效降低噪声样本影响。最后，通过**图像块级聚类与定位任务**挖掘图像内部块间丰富特征信息，从而指导获取更全面的特征嵌入表征，提升检索性能。在细粒度图像检索与聚类任务中，MPUDML与多种前沿无监督深度度量学习方法进行对比验证。实验结果表明，本方法在召回率（R@K）与归一化互信息（NMI）指标上均超越其他先进方法。
 
 * 模型效果
 
